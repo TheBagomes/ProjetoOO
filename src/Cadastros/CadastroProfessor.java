@@ -10,8 +10,10 @@ public class CadastroProfessor extends Servidores{
 	public CadastroProfessor() {
 		
 	}
-
-	public CadastroProfessor(String curso, String cargoAcademico) {
+	
+	public CadastroProfessor(String nome, String email, Integer numero, Integer senha, Integer matricula, String cargo,
+			String função, String curso, String cargoAcademico) {
+		super(nome, email, numero, senha, matricula, cargo, função);
 		this.curso = curso;
 		this.cargoAcademico = cargoAcademico;
 	}

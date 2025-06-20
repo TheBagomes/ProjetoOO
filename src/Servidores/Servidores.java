@@ -6,17 +6,19 @@ public class Servidores extends Cadastro {
 	
 	String cargo;
 	String Função;
-	String matriculaInstitucional;
 	
 	public Servidores(){
 		
 		}
 
-	public Servidores(String cargo, String função, String matriculaInstitucional) {
+	public Servidores(String nome, String email, Integer numero, Integer senha, Integer matricula, String cargo,
+			String função) {
+		super(nome, email, numero, senha, matricula);
 		this.cargo = cargo;
 		Função = função;
-		this.matriculaInstitucional = matriculaInstitucional;
 	}
+
+
 
 	public String getCargo() {
 		return cargo;
@@ -33,15 +35,5 @@ public class Servidores extends Cadastro {
 	public void setFunção(String função) {
 		Função = função;
 	}
-
-	public String getMatriculaInstitucional() {
-		return matriculaInstitucional;
-	}
-
-	public void setMatriculaInstitucional(String matriculaInstitucional) {
-		this.matriculaInstitucional = matriculaInstitucional;
-	}
-	
-	
 
 }
