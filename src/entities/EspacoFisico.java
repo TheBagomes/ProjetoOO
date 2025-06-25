@@ -57,5 +57,12 @@ public abstract class EspacoFisico {
 		this.equipamentos = equipamentos;
 	}
 	
+	//para o relatorio que deve ser "impresso" no final
+	
+	@Override
+    public String toString() {
+        return String.format("[%s] %s - Capacidade: %d, Local: %s",
+                             getTipo(), nome, capacidade, localizacao);
+    }
 	
 }
