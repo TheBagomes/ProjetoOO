@@ -10,12 +10,6 @@ public abstract class EspacoFisico {
 	
 	public abstract String getTipo();
 	
-	//Construtores
-	
-	public EspacoFisico() {
-		
-	}
-	
 	public EspacoFisico(String nome, int capacidade, String localizacao, List<String> equipamentos) {
 		this.nome = nome;
 		this.capacidade = capacidade;
@@ -23,38 +17,22 @@ public abstract class EspacoFisico {
 		this.equipamentos = equipamentos;
 	}
 	
-	//Getters and Setters
+	//Getters
 
 	public String getNome() {
 		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
 	}
 
 	public int getCapacidade() {
 		return capacidade;
 	}
 
-	public void setCapacidade(int capacidade) {
-		this.capacidade = capacidade;
-	}
-
 	public String getLocalizacao() {
 		return localizacao;
 	}
 
-	public void setLocalizacao(String localizacao) {
-		this.localizacao = localizacao;
-	}
-
 	public List<String> getEquipamentos() {
 		return equipamentos;
-	}
-
-	public void setEquipamentos(List<String> equipamentos) {
-		this.equipamentos = equipamentos;
 	}
 	
 	//para o relatorio que deve ser "impresso" no final

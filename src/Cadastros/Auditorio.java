@@ -4,11 +4,7 @@ import entities.EspacoFisico;
 import java.util.List;
 
 public class Auditorio extends EspacoFisico{
-
-	public Auditorio() {
-		super();
-	}
-
+	
 	public Auditorio(String nome, int capacidade, String localizacao, List<String> equipamentos) {
 		super(nome, capacidade, localizacao, equipamentos);
 	}
@@ -17,7 +13,5 @@ public class Auditorio extends EspacoFisico{
 	public String getTipo() {
 		return "Auditorio";
 	}
-	
-	
 
 }

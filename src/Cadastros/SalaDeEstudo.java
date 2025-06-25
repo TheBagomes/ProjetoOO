@@ -5,10 +5,6 @@ import java.util.List;
 
 public class SalaDeEstudo extends EspacoFisico{
 
-	public SalaDeEstudo() {
-		super();
-	}
-
 	public SalaDeEstudo(String nome, int capacidade, String localizacao, List<String> equipamentos) {
 		super(nome, capacidade, localizacao, equipamentos);
 	}
@@ -18,6 +14,4 @@ public class SalaDeEstudo extends EspacoFisico{
 		return "Sala de Estudo";
 	}
 	
-	
-
 }
