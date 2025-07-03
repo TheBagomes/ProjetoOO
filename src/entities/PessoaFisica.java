@@ -1,18 +1,14 @@
 package entities;
 
-public class Cadastro {
+public class PessoaFisica {
 
 	private String nome; 
 	private String email; 
 	private Integer numero; 
 	private Integer senha;
 	private Integer matricula; 
-	
-	public Cadastro() {
-		
-	}
 
-	public Cadastro(String nome, String email, Integer numero, Integer senha, Integer matricula) {
+	public PessoaFisica(String nome, String email, Integer numero, Integer senha, Integer matricula) {
 		this.nome = nome;
 		this.email = email;
 		this.numero = numero;

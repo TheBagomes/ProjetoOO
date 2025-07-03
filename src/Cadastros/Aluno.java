@@ -1,19 +1,15 @@
 package Cadastros;
 
-import entities.Cadastro;
+import entities.PessoaFisica;
 
-public class CadastroAluno extends Cadastro {
+public class Aluno extends PessoaFisica {
 	
 	private String curso; 
 	private Integer semestreInicial; 
-	
-	public CadastroAluno() {
-		super(); 
-	}
 
-	public CadastroAluno(String nome, String email, Integer numero, Integer senha, Integer matricula, String curso,
+	public Aluno(String nome, String email, Integer numero, Integer senha, Integer matricula, String curso,
 			Integer semestreInicial) {
-		super(nome, email, numero, senha, matricula);
+		super(curso, curso, semestreInicial, semestreInicial, semestreInicial);
 		this.curso = curso;
 		this.semestreInicial = semestreInicial;
 	}
