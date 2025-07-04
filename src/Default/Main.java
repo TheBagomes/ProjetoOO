@@ -23,10 +23,12 @@ public class Main {
 			System.out.println("0. Sair");
 			System.out.println("Escolha: ");
 			escolha = sc.nextInt();
+			
+			sc.close();
 
 		} while (escolha != 0);
 
-		sc.close();
+		
 	}
 
 	private void cadastrarAluno(Scanner sc) {
@@ -36,20 +38,19 @@ public class Main {
 	    System.out.print("Email institucional: ");
 	    String email = sc.nextLine();
 	    System.out.print("Telefone: ");
-	    String tel = sc.nextLine();
+	    int tel = sc.nextInt();
 	    System.out.print("Senha: ");
-	    String senha = sc.nextLine();
+	    int senha = sc.nextInt();
 	    System.out.print("Curso: ");
 	    String curso = sc.nextLine();
 	    System.out.print("Número de matrícula: ");
-	    String matricula = sc.nextLine();
+	    int matricula = sc.nextInt();
 	    System.out.print("Semestre: ");
 	    int semestre = Integer.parseInt(sc.nextLine());
 
-	    Aluno aluno = new Aluno(nome, email, tel, senha, curso, matricula, semestre);
-	    usuario.add(aluno);
-
-	    System.out.println("Aluno cadastrado com sucesso")
+	    Aluno aluno = new Aluno(nome, email, tel, senha, matricula, curso, semestre);
+	    System.out.println("Aluno cadastrado com sucesso");
 
 	}
+	
 }
