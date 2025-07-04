@@ -26,6 +26,7 @@ public class Main {
 		}while(escolha != 0);  
 		
 		
+		
 		sc.close();
 	}
 }
