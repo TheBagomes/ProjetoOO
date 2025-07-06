@@ -44,9 +44,17 @@ public class Aluno extends PessoaFisica {
 	
 	public String armzString(){
 		String resposta = super.toString();
+		
+		resposta += '\n';
+		resposta += "NOME: " + nome + '\n';
 		resposta += "CURSO: " + curso + '\n';
 		resposta += "SEMESTRE INICIAL: " + semestreInicial + '\n';
 		resposta += "MATRICULA: " + matricula + '\n';
+		resposta += "EMAIL: " + email + '\n';
+		resposta += "TELEFONE: " + telefone + '\n';
+		resposta += "SENHA: " + senha + '\n';
+	
+		
 		return resposta;
 	}
 	

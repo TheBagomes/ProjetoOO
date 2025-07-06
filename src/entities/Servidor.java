@@ -1,6 +1,5 @@
 package entities;
 
-
 public class Servidor extends PessoaFisica{
 	String matriculaServ;
 	String cargo;

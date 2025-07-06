@@ -1,6 +1,5 @@
 package Front;
 
-
 import javax.swing.JOptionPane;
 
 public class MenuPadrao {
